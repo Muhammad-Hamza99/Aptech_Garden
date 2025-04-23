@@ -1,0 +1,400 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+
+}
+
+html{
+    font-size: 62.5%;
+}
+
+p,a,li{
+    font-size: 1.8rem;
+    color: black;
+    letter-spacing: .1rem;
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style-type: none;
+}
+
+.container{
+    max-width: 122rem;
+    margin: 0 auto;
+    padding: 6.4rem 2.4rem;
+}
+
+.grid{
+    display: grid;
+    align-items: center;
+    gap: 3rem;
+}
+
+.grid-two--cols{
+    grid-template-columns: repeat(2,1fr);
+}
+
+.grid-three--cols{
+    grid-template-columns: repeat(3,1fr);
+}
+
+.grid-four--cols{
+    grid-template-columns: repeat(4,1fr);
+}
+
+/*start of header section*/
+
+.section-header{
+    background-color: #171616;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+
+    & .header-container{
+        max-width: 122rem;
+        margin: 0 auto;
+        padding: 2rem 2.4rem; 
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        & .header-logo{
+            width: 200px;
+            height: 56px;
+            & .image{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        & .header-nav ul{
+            display: flex;
+            gap: 2rem;
+
+            & li a{
+                color: #fff;
+                text-transform: uppercase;
+                transition: all .1s linear;
+                -webkit-transition: all .1s linear;
+                -moz-transition: all .1s linear;
+                -ms-transition: all .1s linear;
+                -o-transition: all .1s linear;
+
+                &:hover{
+                    color: #ffcf17;
+                }
+
+            }
+
+
+        }
+
+        & .header-links{
+            display: flex;
+            gap: 2rem;
+
+            & a{
+                font-size: 1.8rem;
+                color: #fff;
+                cursor: pointer;
+            }
+
+            & .fa-brands{
+                transition:all .3s linear ;
+                -webkit-transition:all .3s linear ;
+                -moz-transition:all .3s linear ;
+                -ms-transition:all .3s linear ;
+                -o-transition:all .3s linear ;
+            }
+
+            & .fa-brands:hover{
+                transform: rotate(360deg);
+                -webkit-transform: rotate(360deg);
+                -moz-transform: rotate(360deg);
+                -ms-transform: rotate(360deg);
+                -o-transform: rotate(360deg);
+                color: #ffcf17;
+            }
+        }
+    }
+}
+
+
+/*end of header section*/
+
+/*start of hero section*/
+
+.section-hero{
+    background-image: linear-gradient(rgba(2,0,11,0.5)),url('./images/heroimage.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & .container{
+        & h3{
+            color: #fff;
+            text-transform: capitalize;
+            font-size: 2.5rem;
+            letter-spacing: .1rem;
+            font-weight: 400;
+            text-align: center;
+            margin-bottom: 1rem;
+
+        }
+
+        & h1{
+            color: #fff;
+            text-transform: uppercase;
+            font-size: 5rem;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 5px #000;
+
+        }
+
+        & p{
+            color: #fff;
+            text-transform: capitalize;
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        & .btns{
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            & button{
+                background-color: transparent;
+                border: .1px solid #fff;
+                color: #fff;
+                text-transform: uppercase;
+                padding: 1rem 2rem;
+                font-size: 2rem;
+                font-weight: 500;
+                border-radius: 3rem;
+                -webkit-border-radius: 3rem;
+                -moz-border-radius: 3rem;
+                -ms-border-radius: 3rem;
+                -o-border-radius: 3rem;
+                transition: all .1s linear;
+                -webkit-transition: all .1s linear;
+                -moz-transition: all .1s linear;
+                -ms-transition: all .1s linear;
+                -o-transition: all .1s linear;
+                cursor: pointer;
+
+                &:hover{
+                    background-color: #fff;
+                    color: black;
+                }
+
+            }
+        }
+    }
+
+}
+
+
+
+/*end of hero section*/
+
+/*start of features section*/
+
+.section-features .container{
+    & .card{
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        height: 380px;
+        position: relative;
+        & .card-image{
+            width: 100%;
+            margin-bottom: 4rem;
+            
+            & img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        & .icon{
+            width: 9rem;
+            height: 9rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            top: 35%;
+            left: 35%;
+            background-color: #fff;
+            border-radius: 50%;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+            -o-border-radius: 50%;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+           
+            & .fa-solid{
+                font-size: 3rem;
+                color: #fcaf17;
+            }
+
+        }
+
+        & .card-content{
+            margin-top: 8rem;
+            & h6{
+                text-align: center;
+                font-size: 2rem;
+                text-transform: uppercase;
+                margin-bottom: 1rem;
+            }
+
+            & p{
+                text-align: center;
+                text-transform: capitalize;
+            }
+        }
+    }
+
+}
+
+
+/*end of features section*/
+
+/*start of career courses section*/
+
+.section-career--courses{
+   & .bottom .container .card{
+       box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    & .card-image{
+        width: 100%;
+        margin-bottom: 2rem;
+        & img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    & .card-content{
+        padding: 1.5rem;
+        & h3{
+            text-align: center;
+            text-transform: capitalize;
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+        
+        & p{
+            font-size: 1.3rem;
+            text-align: center;
+            margin-bottom: 1.5rem;
+            text-transform: capitalize;
+        }
+
+        & p:nth-of-type(1){
+            color: #1e1c1c;
+            font-weight: 700;
+
+        }
+
+        
+        & p:nth-of-type(2){
+            & span{
+                font-weight: 800;
+            }
+          
+
+        }
+
+        & .timing{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            & .para{
+                & span{
+                    font-weight: 50rem;  
+                }
+            }
+          
+        }
+
+      
+    }
+
+   }
+
+   & .bottom .container .card:nth-of-type(1){
+    & .progress{
+        background-color: #e9ecef;
+        width: 100%;
+        height: 2rem;
+        margin-block: 1rem;
+       & .progress-bar{
+        background-color: #f7b205;
+        width: 78%;
+        height: 2rem;
+       }
+    }
+
+   }
+
+   & .bottom .container .card:nth-of-type(2){
+    & .progress{
+        background-color: #e9ecef;
+        width: 100%;
+        height: 2rem;
+        margin-block: 1rem;
+       & .progress-bar{
+        background-color: #f7b205;
+        width: 70%;
+        height: 2rem;
+       }
+    }
+
+   }
+
+   & .bottom .container .card:nth-of-type(3){
+    & .progress{
+        background-color: #e9ecef;
+        width: 100%;
+        height: 2rem;
+        margin-block: 1rem;
+       & .progress-bar{
+        background-color: #f7b205;
+        width: 65%;
+        height: 2rem;
+       }
+    }
+
+   }
+
+   & .bottom .container .card:nth-of-type(4){
+    & .progress{
+        background-color: #e9ecef;
+        width: 100%;
+        height: 2rem;
+        margin-block: 1rem;
+       & .progress-bar{
+        background-color: #f7b205;
+        width: 60%;
+        height: 2rem;
+       }
+    }
+
+   }
+}
+
+/*end of career courses section*/
