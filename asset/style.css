@@ -48,6 +48,10 @@ li{
     grid-template-columns: repeat(4,1fr);
 }
 
+.grid-five--cols{
+    grid-template-columns:2fr repeat(3,.5fr) 2fr;
+}
+
 /*start of header section*/
 
 .section-header{
@@ -66,7 +70,7 @@ li{
 
         & .header-logo{
             width: 200px;
-            height: 56px;
+            height: 65px;
             & .image{
                 width: 100%;
                 height: 100%;
@@ -275,8 +279,29 @@ li{
 /*start of career courses section*/
 
 .section-career--courses{
+    & .container{
+        padding: 4rem 2.4rem;
+        & h2{
+            font-size: 3.5rem;
+            text-transform: capitalize;
+            font-weight: 400;
+            border-left: 6px solid #f7b205;
+            padding-left: 1rem;
+            margin-bottom: 2rem;
+            & span{
+                font-weight: 700;
+            }
+        }
+
+        & p{
+            text-transform: capitalize;
+        }
+    }
    & .bottom .container .card{
        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+       max-height: 50rem;
+       min-height: 49rem;
+
     & .card-image{
         width: 100%;
         margin-bottom: 2rem;
@@ -322,10 +347,19 @@ li{
             display: flex;
             justify-content: space-between;
             align-items: center;
+            border-top: 1px solid #e6e6e6;
+            margin-top: 2rem;
+
 
             & .para{
-                & span{
-                    font-weight: 50rem;  
+                margin-top: rem;
+                border-top: 1px solid #e6e6e6;
+
+                & .spn{
+                    font-weight: 700;
+                    font-size: 1.3rem;  
+                    text-transform: capitalize;
+                    color: #1e1c1c;
                 }
             }
           
@@ -395,6 +429,501 @@ li{
     }
 
    }
+
+   & .bottom .container .card{
+    & .progress{
+        margin-bottom: 1rem;
+    }
+   }
 }
 
 /*end of career courses section*/
+
+/*start of short courses section*/
+.section-short--courses{
+    & .container{
+        padding: 10rem 2.4rem 12rem;
+        & h2{
+            font-size: 3.5rem;
+            text-transform: capitalize;
+            font-weight: 400;
+            border-left: 6px solid #f7b205;
+            padding-left: 1rem;
+            margin-bottom: 2rem;
+            & span{
+                font-weight: 700;
+            }
+        }
+
+        & p{
+            text-transform: capitalize;
+        }
+    }
+
+}
+
+/*end of short courses section*/
+
+/*start of online courses section*/
+.section-online--courses{
+    background-image: linear-gradient(rgba(2,0,11,0.7)),url('./images/post5.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-attachment: fixed;
+
+    & .container{
+        & h2{
+            text-align: center;
+            text-transform: capitalize;
+            font-size: 3.5rem;
+            color: #fff;
+            margin-bottom: 1rem;
+        }
+
+        & p{
+            text-transform: capitalize;
+            color: #fff;
+            font-size: 2rem;
+
+        }
+
+    }
+}
+
+/*end of online courses section*/
+
+/*start of upcoming events courses section*/
+
+.section-upcomingEvents--courses{
+    & .container{
+        & h2{
+            text-align: center;
+            margin-bottom: 1rem;
+            text-transform: capitalize;
+            font-weight: 400;
+            font-size: 3.5rem;
+            & span{
+                font-weight: 700;
+            }
+        }
+
+        & p{
+            text-align: center;
+            margin-bottom: 2rem;
+            font-size: 2rem;
+
+        }
+
+        & .btns{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            & button{
+                background-color: transparent;
+                border: none;
+                background-color: #f7b205;
+                padding: 1rem 2rem ;
+                text-transform: capitalize;
+                font-size: 2rem;
+                cursor: pointer;
+                border-radius: .1rem;
+             
+            }
+        }
+    }
+}
+
+/*end of  upcoming events courses section*/
+
+/*start what people say of upcoming events courses section*/
+.section-whatPeopleSay--courses{
+    background-image: linear-gradient(rgba(2,0,11,0.7)),url('./images/post5.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    background-attachment: fixed;
+
+    & .containers:first-of-type{
+        padding-inline: 2.4rem;
+        padding-top:8rem;
+        padding-bottom:5rem;
+        & h2{
+            font-size: 3.5rem;
+            text-transform: capitalize;
+            font-weight: 400;
+            border-left: 6px solid #f7b205;
+            padding-left: 1rem;
+            margin-bottom: 2rem;
+            color: #fff;
+            & span{
+                font-weight: 700;
+            }
+        }
+
+        & p{
+            text-transform: capitalize;
+            color: #fff;
+        }
+    }
+
+    & .bottom{
+        & .container{
+            padding-inline:2.4rem ;
+            padding-block: 0rem;
+            gap: 6rem;
+            & .content-1--div{
+                background-color: #fff;
+                padding: 2rem;
+                border-radius: .5rem;
+                & h6{
+                    color: #000;
+                    margin-bottom: 1rem;
+                    font-size: 1.8rem;
+                    text-transform: capitalize;
+                }
+
+                & .para{
+                    color: #000;
+                    margin-bottom: 1rem;
+                    font-size: 1.6rem;
+                    text-transform: capitalize;
+
+                }
+
+                & p{
+                    color: #000;
+                    margin-bottom: 1rem;
+                    font-size: 1.5rem;
+                    text-transform: capitalize;
+
+
+                }
+              
+
+            }
+
+            & .content-2--div{
+                background-color: #fff;
+                padding: 2rem;
+                border-radius: .5rem;
+                & h6{
+                    color: #000;
+                    margin-bottom: 1rem;
+                    font-size: 1.8rem;
+                    text-transform: capitalize;
+                }
+
+                & .para{
+                    color: #000;
+                    margin-bottom: 1rem;
+                    font-size: 1.6rem;
+                    text-transform: capitalize;
+
+                }
+
+                & p{
+                    color: #000;
+                    margin-bottom: 1rem;
+                    font-size: 1.5rem;
+                    text-transform: capitalize;
+
+
+                }
+              
+
+            }
+        }
+
+    }
+}
+
+/*end of what people say courses section*/
+
+/*start of successful placement section*/
+.section-successful--placement{
+    & .container{
+        padding: 10rem 2.4rem 12rem;
+        & h2{
+            font-size: 3.5rem;
+            text-transform: capitalize;
+            font-weight: 400;
+            border-left: 6px solid #f7b205;
+            padding-left: 1rem;
+            margin-bottom: 2rem;
+            & span{
+                font-weight: 700;
+            }
+        }
+
+        & p{
+            text-transform: capitalize;
+        }
+    }
+
+}
+
+/*end of successful placement section*/
+
+/*start of Onlinevarsity section*/
+.section-OnlineVarsity{
+    background-image: linear-gradient(rgba(2,0,11,0.8)),url('./images/post5.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 90vh;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & .container{
+        & h2{
+            text-align: center;
+            margin-bottom: 1rem;
+            color: #fff;
+            font-size: 4rem;
+
+        }
+
+        & h6{
+            text-align: center;
+            margin-bottom: 1rem;
+            color: #fff;
+            font-size: 2.5rem;
+
+        }
+
+        & p{
+            text-align: center;
+            color: #fff;
+            margin-bottom: 2rem;
+            
+        }
+
+        & .btns{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            & button{
+                background-color: #f7b205;
+                border: none;
+                text-transform: capitalize;
+                padding: 1rem 2rem;
+                font-size: 2rem;
+                cursor: pointer;
+
+
+            }
+        }
+    }
+}
+
+
+/*end of Onlinevarsity section*/
+
+/*start of student of month section*/
+
+.section-student-of--month{
+    & .container{
+        padding: 10rem 2.4rem 5rem;
+        & h2{
+            font-size: 3.5rem;
+            text-transform: capitalize;
+            font-weight: 400;
+            border-left: 6px solid #f7b205;
+            padding-left: 1rem;
+            margin-bottom: 2rem;
+            & span{
+                font-weight: 700;
+            }
+        }
+
+        & p{
+            text-transform: capitalize;
+        }
+    }
+
+}
+
+/*end of student of month section*/
+
+/*start of student of month section*/
+
+.section-our--connects{
+    & .container{
+        padding: 10rem 2.4rem 5rem;
+        & h2{
+            font-size: 3.5rem;
+            text-transform: capitalize;
+            font-weight: 400;
+            border-left: 6px solid #f7b205;
+            padding-left: 1rem;
+            margin-bottom: 2rem;
+            & span{
+                font-weight: 700;
+            }
+        }
+
+        & p{
+            text-transform: capitalize;
+        }
+    }
+
+}
+
+/*end of student of month section*/
+
+/*start of project of month section*/
+
+.section-project-of--month{
+    & .container{
+        padding: 10rem 2.4rem 5rem;
+        & h2{
+            font-size: 3.5rem;
+            text-transform: capitalize;
+            font-weight: 400;
+            border-left: 6px solid #f7b205;
+            padding-left: 1rem;
+            margin-bottom: 2rem;
+            & span{
+                font-weight: 700;
+            }
+        }
+
+        & p{
+            text-transform: capitalize;
+        }
+    }
+
+}
+
+/*end of project of month section*/
+
+/*start of winner circle section*/
+
+.section-winner--circle{
+    & .container{
+        padding: 10rem 2.4rem 5rem;
+        & h2{
+            font-size: 3.5rem;
+            text-transform: capitalize;
+            font-weight: 400;
+            border-left: 6px solid #f7b205;
+            padding-left: 1rem;
+            margin-bottom: 2rem;
+            & span{
+                font-weight: 700;
+            }
+        }
+
+        & p{
+            text-transform: capitalize;
+        }
+    }
+
+}
+
+/*end of winner circle  section*/
+
+/*start of footer section*/
+.section-footer{
+    & .footer-top{
+        background-color: #171616;
+        
+        & .footer-top--container{
+            max-width: 122rem;
+            margin: 0 auto;
+            padding: 2rem 2.4rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            & .logo{
+                width: 200px;
+                height: 65px;
+                & img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+
+                }
+            }
+            & .icon{
+                display: flex;
+                gap: 2rem;
+    
+                & a{
+                    font-size: 1.8rem;
+                    color: #fff;
+                    cursor: pointer;
+                }
+    
+                & .fa-brands{
+                    transition:all .3s linear ;
+                    -webkit-transition:all .3s linear ;
+                    -moz-transition:all .3s linear ;
+                    -ms-transition:all .3s linear ;
+                    -o-transition:all .3s linear ;
+                }
+    
+                & .fa-brands:hover{
+                    transform: rotate(360deg);
+                    -webkit-transform: rotate(360deg);
+                    -moz-transform: rotate(360deg);
+                    -ms-transform: rotate(360deg);
+                    -o-transform: rotate(360deg);
+                    color: #ffcf17;
+                }
+
+            }
+
+        }
+    }
+
+    & .footer-bottom{
+        background-color: #171616;
+        .footer-bottom--container{
+            max-width: 122rem;
+            margin: 0 auto;
+            padding: 5rem 2.4rem;
+
+            & .footer-div--1{
+                & h6{
+                    color: #fff;
+                    font-size: 1.6rem;
+                    margin-bottom: 1rem;
+                    letter-spacing: .1rem;
+
+                }
+                & p{
+                    color: #fff;
+                    font-size: 1.5rem;
+                    margin-bottom: 1rem;
+
+                }
+
+                & input{
+                    padding: 1rem;
+                    font-size: 1.5rem;
+                    border: none;
+                    outline: none;
+                    text-transform: capitalize;
+                    width: 28rem;
+                    background-color:#222020;
+                }
+            }
+
+           
+
+        }
+
+    }
+
+}
+
+
+/*end of footer section*/
